@@ -1,0 +1,10 @@
+<main>
+        <p class="text-yellow-300 font-lexend">{{userActvo}}</p>
+        <use-card 
+                [nombre]="'CurrentDate '+currentDate" 
+                surname="Ramírez" 
+                email="elvis@ramirez.com" 
+                [(active)]="userActvo"
+                (activeChange)="onChange()"
+        />
+</main>

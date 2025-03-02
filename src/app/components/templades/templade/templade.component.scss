@@ -1,0 +1,12 @@
+main {
+        @apply h-[100vh] bg-slate-950;
+}
+
+input[type="button"],
+button {
+        @apply bg-[#4c00ff] px-3 py-1 rounded-md
+}
+
+.info {
+        @apply text-white
+}

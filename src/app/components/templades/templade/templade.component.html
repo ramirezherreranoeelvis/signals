@@ -1,0 +1,17 @@
+<main>
+        <input type="text" name="" id="" [value]="stateService.counter()">
+        <input type="button" value="Incrementar" (click)="stateService.incrementCounter()">
+        <div class="auth">
+                @if(stateService.isAuntheticated()){
+                <div class="info">
+                        <p>Welcome, {{'User name'}}!</p>
+                        <button (click)="stateService.logout()">Logout</button>
+                </div>
+                }
+                @if (!stateService.isAuntheticated()) {
+                <button class="login-btn" (click)="stateService.setUser()">
+                        Login
+                </button>
+                }
+        </div>
+</main>
